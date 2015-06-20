@@ -6,13 +6,13 @@
 /* Information about this package */
 Package.describe({
     // Short two-sentence summary.
-    summary: "What this does",
+    summary: "A tedious module wrapper for MSQL connection query and data manipulation (insert,update,delete)",
     // Version number.
     version: "1.0.0",
     // Optional.  Default is package directory name.
-    name: "cashbit:meteortedious"
+    name: "cashbit:meteortedious",
     // Optional github URL to your source repository.
-    //git: "https://github.com/something/something.git",
+    git: "https://github.com/cashbit/meteortedious.git"
 });
 
 /* This defines your actual package */
@@ -27,6 +27,7 @@ Package.onUse(function (api) {
     //api.imply('templating')
     // Export the object 'Email' to packages or apps that use this package.
     api.export('sqlServerConnection', 'server');
+    api.export('tdsConnection', 'server');
     // Specify the source code for the package.
     api.addFiles('meteortedious.js', 'server');
 });
