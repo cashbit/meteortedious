@@ -48,7 +48,7 @@ try{
 	// inserting records
     var insertObj = {
         code: '2',
-        t_cwar: 'foo'
+        description: 'foo'
     }
     var result = sqlServerConnection.insert(insertObj,'items') ;
     console.log("insert result:", result) ;
