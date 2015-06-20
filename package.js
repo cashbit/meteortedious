@@ -25,8 +25,6 @@ Package.onUse(function (api) {
     //api.use('underscore', 'server');
     // Give users of this package access to the Templating package.
     //api.imply('templating')
-    // Export the object 'Email' to packages or apps that use this package.
-    api.export('sqlServerConnection', 'server');
     api.export('tdsConnection', 'server');
     // Specify the source code for the package.
     api.addFiles('meteortedious.js', 'server');
