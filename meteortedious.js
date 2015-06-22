@@ -37,6 +37,10 @@ tdsConnection = function(config){
         find: function(selector,tablename,resultfields){
             var sql = prepareSqlForFind(selector,tablename,resultfields);
             return wrappedQuery(this.connection,sql.sql,sql.params) ;
+        },
+
+        close: function(){
+            this.connection.close();
         }
     }
 }

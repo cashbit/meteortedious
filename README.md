@@ -80,6 +80,10 @@ try{
     }
     var result = sqlServerConnection.find(findSelector,'items') ;
     console.log("find result:", result) ;
+    
+    
+    // close the connection
+    sqlServercConnection.close()
 
 
 } catch (err){
